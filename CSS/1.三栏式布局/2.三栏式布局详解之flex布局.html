@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>三栏式布局-flex
+  </title>
+</head>
+<style>
+  .sb{
+    height: 200px;
+    display: flex;
+ 
+  }
+  .right,.left{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+  }
+  .content{
+    flex: 1;
+    order: 2;
+    width: 100%;
+    height: 200px;
+    background-color: cyan;
+  }
+  .left{
+   order:1
+  }
+  .right{
+    order: 2;
+  }
+
+
+</style>
+<body>
+  <!-- 什么是三栏式布局,主题内容优先加载,左右两侧固定宽度,中间自适应剩余空间 -->
+ <!-- 2.flex布局 -->
+  <div class="sb">
+    <div class="content">
+      主题内容优先加载
+    </div>
+    <div class="left">左侧</div>
+    <div class="right">右侧</div>
+  </div>
+ 
+  
+</body>
+</html>
